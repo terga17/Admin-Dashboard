@@ -78,6 +78,47 @@
     gap: 2rem;
 }
 
+.hello-user{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr repeat(3, 2fr);
+    padding: 1rem;
+}
+
+#bigLogo{
+    grid-column: 1 / 2;
+}
+
+.user-info{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1 / 3;
+}
+
+.text-grid{
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#small-txt{
+    grid-row: 1 / 2;
+}
+#big-txt{
+    font-size: 1.5rem;
+    grid-row: 2 / 3;
+}
+
+.user-btns{
+    display: flex;
+    grid-column: 5 / 8;
+    justify-content: space-between;
+    height: 1.6rem;
+    align-self: center;
+}
+
+
 
 .main-content{
     background-color: brown;
